@@ -27,10 +27,46 @@
         <span class="bar"></span>
         <span class="bar"></span>
     </div>
-    
     </nav>
+
 </header>
 <h2>Contact Us</h2>
+
+<section class="runway">
+
+    <article class="info-box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat, blanditiis sint eos incidunt est exercitationem eligendi, doloribus dolores dolorum laborum pariatur laboriosam deserunt rem repellat ipsum nisi esse sapiente.</p>
+    </article>
+    <br>
+    <form class="customer-form">
+        <label for="name">Name:</label>
+        <input type="text" namne="name" id="name" placeholder="Enter your name" class="name" required>
+
+        <label for="email">Email</label>
+        <input type="email"name="email"id="email"placeholder="text@mail.com" class="email"required>
+        
+        <label for="phone">Phone nummber:</label>
+        <input type="tel" name="phone"id="phone" placeholder="070333442" class="phone"required>
+
+        <select name="customer-status" id="customer-status"class="customer-status" required>
+            <option value="" disabled selected>Reason for contact</option>
+            <option value="booking">Booking</option>
+            <option value="cancel">Cancel booking</option>
+            <option value="complaint">Complaint</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <textarea name="message" class="message" id="message" rows="10" placeholder="Enter a message...">
+
+        </textarea>
+
+        <div class="button">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</section>
+
 <script src="script.js"></script>
     
 </body>
