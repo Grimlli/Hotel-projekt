@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer-support</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,13 +37,13 @@
 </header>
 <h2>Contact Us</h2>
 
-<section class="runway">
+<section class="runway" id="rui">
 
     <article class="info-box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat, blanditiis sint eos incidunt est exercitationem eligendi, doloribus dolores dolorum laborum pariatur laboriosam deserunt rem repellat ipsum nisi esse sapiente.</p>
     </article>
     <br>
-    <form class="customer-form">
+    <form class="customer-form" action="#">
         <label for="name">Name:</label>
         <input type="text" namne="name" id="name" placeholder="Enter your name" class="name" required>
 
@@ -60,12 +65,22 @@
 
         </textarea>
 
-        <div class="button">
-            <input type="submit" value="Submit">
+        <div class="button-cont" id="button">
+
+            <button type="submit"form="customer-form" class="button" id ="send">Send</button>
         </div>
     </form>
 
 </section>
+
+<article class="sub-input" id="sub-input"> 
+    <p class="sub-text">Sent to Support team</p>
+</article>
+
+
+<footer>
+    <a href="#" class="go-room-top">TOP</a>
+</footer>
 
 <script src="script.js"></script>
     
