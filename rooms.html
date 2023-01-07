@@ -4,44 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rooms</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <header>
-    <nav class="navbar">
-        <h1><a href="index.html" class="nav-branding" >Ypsilon</a></h1>
+        
 
-    <ul class="nav-menu">
-        <li class="nav-item">
-            <a href="index.html"class="nav-link">Home</a>
-        <li class="nav-item">
-            <a href="rooms.html"class="nav-link">Room</a>
-        <li class="nav-item">
-            <a href="customer-support.html"class="nav-link">Contact</a>
-        </li>
-    </ul>
+        <nav class="navbar">
+            <h1><a href="index.html" class="nav-branding" >Ypsilon</a></h1>
+    
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html"class="nav-link">Home</a>
+            <li class="nav-item">
+                <a href="rooms.html"class="nav-link">Room</a>
+            <li class="nav-item">
+                <a href="customer-support.html"class="nav-link">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>
+    
+    </header>
+    <h2 id="testh2">ROOMS</h2>
 
-    <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-
-    </nav>
-</header>
-
-<h2 >ROOMS</h2>
 
 <section class="runway">
 
     
     <article class="room">
-        <img src="Images/room1.jpg" alt="">
+        <img src="images/room1.jpg" alt="">
    
 
         <!--HATE room 1 picture to white for the website-->
@@ -58,7 +62,7 @@
 
 </article>
     <article class="room"  id="link-main">
-        <img src="Images/room2.jpg" alt="" class="img-border">
+        <img src="images/room2.jpg" alt="" class="img-border">
     
     <div class="room2-info"id="room2-info">
         <p id="test"class="room-basic">Rooom name 2</p>
@@ -74,7 +78,7 @@
 
 </article>
 <article class="room">
-    <img src="Images/room3.jpg" alt="">
+    <img src="images/room3.jpg" alt="">
 
 <div class="room3-info"id="room3-info">
     <p id="test"class="room-basic">room name 3</p>
@@ -95,10 +99,53 @@
 </footer>
 
 
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click",openHamburger);
+document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", closeHamburger));
+
+function openHamburger(){
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active"); 
+    console.log("kom in i hambrger");
+}
+function closeHamburger(){
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active"); 
+}
 
 
+const room1Open = document.getElementById("room1-open");
+const room1Info = document.getElementById("room1-info");
+const arrow = document.getElementById("arrow-down");
+
+const room2Open = document.getElementById("room2-open");
+const room2Info = document.getElementById("room2-info");
+
+const room3Open = document.getElementById("room3-open");
+const room3Info = document.getElementById("room3-info");
 
 
-<script src="script.js"></script>
+function openRoomText1(){
+    console.log("kom in i 1");
+    room1Open.classList.toggle("active");
+    arrow.classList.toggle("active");
+}
+function openRoomText2(){
+    console.log("kom in i 2");
+    room2Open.classList.toggle("active");
+}
+function openRoomText3(){
+    console.log("kom in i 3");
+    room3Open.classList.toggle("active");
+}
+room1Info.addEventListener("click", openRoomText1);
+room2Info.addEventListener("click", openRoomText2);
+room3Info.addEventListener("click", openRoomText3);
+
+</script>
+
 </body>
 </html>
