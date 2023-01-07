@@ -372,7 +372,7 @@ option{
     border-style: none;
     border-radius: 5%;
     border-color: var(--text);
-    transition: 0.4s;
+    transition: 0.45s;
 }
 
 .room-on-main:hover{
