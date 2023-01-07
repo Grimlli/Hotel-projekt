@@ -16,6 +16,8 @@ const room3Info = document.getElementById("room3-info");
 
 const send = document.getElementById("send").addEventListener("click", formDone);
 
+const res = document.getElementById("return").addEventListener("click", activateB);
+
 /*
 const runway = document.getElementById("runway");
 const cForm = document.getElementById("customer-form");
@@ -24,8 +26,10 @@ const formMessage = document.getElementById("sub-input");
 
 
 
-function cT(){
-    alert("TEST TEST");
+
+function activateB(){
+    console.log("Knappen kommer in hit")
+    document.getElementById("send").disabled = false;
 }
 
 
@@ -61,9 +65,10 @@ function formDone(){
     console.log("FormDone");
    
     if(requierd() == true){
-        console.log(requierd);
+        console.log("IT WAS TRUE");
         formMessage.classList.toggle("active");
-        send.classList.toggle("after");
+        /*send.classList.toggle("after");*/
+        document.getElementById("send").disabled = true;
     
     }
 

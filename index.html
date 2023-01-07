@@ -63,18 +63,42 @@
 
 
         <a href="rooms.html#link-main">
-            <img src="Images/room1.jpg" alt="bild på ett hotell rum" class="room-on-main">
+            <img src="Images/room2.jpg" alt="bild på ett hotell rum" class="room-on-main">
         </a>
    
 </article>
 
+   
 
     </section>
-
-
-    <footer>
+            
+    <section class="go-top">
         <a href="#" class="go-room-top">TOP</a>
+    </section>
+           
+    <footer>
+      <p>Made by: Adam Hedberg</p>
     </footer>
-    <script src="script.js"></script>
+
+
+    <!--Something happen to the script file moved scripted-->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+
+            hamburger.addEventListener("click",openHamburger);
+            document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", closeHamburger));
+
+            function openHamburger(){
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active"); 
+                console.log("kom in i hambrger");
+            }
+            function closeHamburger(){
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active"); 
+            }
+
+    </script>
 </body>
 </html>
