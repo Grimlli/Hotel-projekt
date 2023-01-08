@@ -401,7 +401,7 @@ label{
     border-style: solid;
 }
 
-h3{
+.h2M{
     color: var(--text);
     text-align: center;
     font-size: 10vh;
