@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +16,12 @@
 <body>
     <header>
     <nav class="navbar">
-        <h1><a href="index.html" class="nav-branding" >Ypsilon</a></h1>
+        <div class="hotel-name-icon">
 
+        <!--Could have chosen a better icon-->
+        <img src="images/icon.png" alt="icon" class="icon">
+        <h1><a href="#" class="nav-branding" >Ypsilon</a></h1>
+    </div>
     <ul class="nav-menu">
         <li class="nav-item">
             <a href="index.html"class="nav-link">Home</a>
@@ -60,7 +64,7 @@
             <option value="complaint">Complaint</option>
             <option value="other">Other</option>
         </select>
-        
+        <label for="message">Enter message:</label>
         <textarea name="message" class="message" id="message" rows="10" placeholder="Enter a message...">
 
         </textarea>
