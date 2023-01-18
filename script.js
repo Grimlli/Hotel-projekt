@@ -1,11 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-/* TEST*/ 
-/*const title = document.getElementById("navbranding");*/
 
 const send = document.getElementById("send").addEventListener("click", formDone);
-
 const res = document.getElementById("return").addEventListener("click", activateB);
 
 /*
@@ -18,8 +15,13 @@ const formMessage = document.getElementById("sub-input");
 
 
 function activateB(){
-    console.log("Knappen kommer in hit")
-    document.getElementById("send").disabled = false;
+    console.log("Knappen kommer in RESET")
+    
+    if(document.getElementById("send").disabled == true){
+        formMessage.classList.toggle("active");
+        document.getElementById("send").disabled = false;
+    }
+    
 }
 
 
@@ -53,28 +55,29 @@ function formDone(){
 
 function requierd(){
 
-    const email = document.getElementById("email").value;
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var customerStatus = document.getElementById("customer-status").value;
-    var message = document.getElementById("message").value;
+    let email = document.getElementById("email").value;
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let customerStatus = document.getElementById("customer-status").value;
+    let message = document.getElementById("message").value;
+
     console.log("Innna if sats");
+    console.log(email +" " + name +" " + phone +" " + customerStatus + " " +message);
   
-  
-    if(typeof email !="undefiend" && email.includes("@")){
+    if( email !="" && email.includes("@")){
         console.log("Kom igenom email");
 
-        if(typeof name != ""){
+        if(name != "underfiend"){
             console.log("Kom igenom name");
 
-            if(typeof phone !="undefiend"){
-                console.log("Kom igenom phone");
+            if( phone !="undefiend"){
+                console.log("Kom igenom phone "+ phone);
 
-                if(typeof customerStatus !="undefiend"){
-                console.log("Kom igenom CustomerStatus");
+                if( customerStatus !="Reason for contact"){
+                console.log("Kom igenom CustomerStatus "+ customerStatus);
 
-                    if(typeof message !="undefiend"){
-                        console.log("Kom igenom message");
+                    if( message !=""){
+                        console.log("Kom igenom message "+ message);
                         return true;
                     }
                 }
@@ -82,6 +85,7 @@ function requierd(){
         }
     }
     else{
+        alert("Saknar info")
          return false;
         }
 

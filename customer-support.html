@@ -24,9 +24,9 @@
     </div>
     <ul class="nav-menu">
         <li class="nav-item">
-            <a href="index.html"class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
         <li class="nav-item">
-            <a href="rooms.html"class="nav-link">Room</a>
+            <a href="rooms.html" class="nav-link">Room</a>
         <li class="nav-item">
             <a href="customer-support.html"class="nav-link">Contact</a>
         </li>
@@ -53,10 +53,10 @@
     <br>
     <form class="customer-form" action="#">
         <label for="name">Name:</label>
-        <input type="text" namne="name" id="name" placeholder="Enter your name" class="name" required>
+        <input type="text" name="name" id="name" placeholder="Enter your name" class="name" required>
 
         <label for="email">Email</label>
-        <input type="email"name="email"id="email"placeholder="text@mail.com" class="email"required>
+        <input type="email" name="email" id="email" placeholder="text@mail.com" class="email"required>
         
         <label for="phone">Phone nummber:</label>
         <input type="tel" name="phone"id="phone" placeholder="070333442" class="phone"required>
@@ -68,17 +68,16 @@
             <option value="complaint">Complaint</option>
             <option value="other">Other</option>
         </select>
-        <label for="message">Enter message:</label>
-        <textarea name="message" class="message" id="message" rows="10" placeholder="Enter a message...">
 
-        </textarea>
+        <label for="message">Enter message:</label>
+        <textarea name="message" class="message" id="message" rows="10" required placeholder="Enter your message..."></textarea>
 
         <div class="button-cont" id="button">
 
             <button type="submit"form="customer-form" class="button" id ="send">Send</button>
         </div>
         <br>
-        <div class="button-cont" id="button">
+        <div class="button-cont" id="reset-button">
             <input type="reset" class="button2" id ="return" value="Reset"></input>
         </div>
     </form>

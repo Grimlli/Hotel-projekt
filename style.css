@@ -45,7 +45,8 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 1%;
+
 }
 
 .nav-menu{
@@ -89,6 +90,7 @@ p{
 
     .hamburger{
         display: block;
+        max-width: 30vw;
     }
     
      .hamburger.active .bar:nth-child(2){
@@ -107,12 +109,22 @@ p{
         position: fixed;
         left: -100%;
         top: 70px;
+        max-height: 20%;
         gap: 0;
         flex-direction: column;
         width: 100%;
         text-align: center;
         transition: 0.2s;
     } 
+
+    h1{
+        max-width: 20%;
+    }
+
+    .icon{
+        max-width: 20%;
+        max-height: 20%;
+    }
 
     .nav-item{
         margin: 16px 0;
@@ -355,11 +367,13 @@ label{
     color: var(--text);
     margin-bottom: 30px;
     padding: 1em;
+    align-content:center;
     border-radius: 10px;
     border: 3px solid transparent;
     outline: none;
 
 }
+
 
 
 .button-cont{
@@ -459,6 +473,7 @@ body{
     width: 50px;
     height: 50px;
     margin-right: 10px;
+ 
 }
 
 .hotel-name-icon{
