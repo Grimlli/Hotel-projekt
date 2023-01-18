@@ -93,24 +93,7 @@
 
 
     <!--Something happen to the script file moved scripted-->
-    <!--<script src="script.js"></script>-->
-    <script>
-        const hamburger = document.querySelector(".hamburger");
-            const navMenu = document.querySelector(".nav-menu");
-
-            hamburger.addEventListener("click",openHamburger);
-            document.querySelectorAll("nav-link").forEach(n => n.addEventListener("click", closeHamburger));
-
-            function openHamburger(){
-                hamburger.classList.toggle("active");
-                navMenu.classList.toggle("active"); 
-                console.log("kom in i hambrger");
-            }
-            function closeHamburger(){
-                hamburger.classList.remove("active");
-                navMenu.classList.remove("active"); 
-            }
-
-    </script>
+    <script src="scriptApp.js"></script>
+  
 </body>
 </html>
