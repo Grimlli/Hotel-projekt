@@ -28,7 +28,7 @@
         <li class="nav-item">
             <a href="rooms.html" class="nav-link">Room</a>
         <li class="nav-item">
-            <a href="customer-support.html"class="nav-link">Contact</a>
+            <a href="customer-support.html" class="nav-link">Contact</a>
         </li>
     </ul>
     <div class="hamburger">
@@ -51,17 +51,17 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat, blanditiis sint eos incidunt est exercitationem eligendi, doloribus dolores dolorum laborum pariatur laboriosam deserunt rem repellat ipsum nisi esse sapiente.</p>
     </article>
     <br>
-    <form class="customer-form" action="#">
+    <form id="customer-f" class="customer-form" action="#">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Enter your name" class="name" required>
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="text@mail.com" class="email"required>
+        <input type="email" name="email" id="email" placeholder="text@mail.com" class="email" required>
         
         <label for="phone">Phone nummber:</label>
-        <input type="tel" name="phone"id="phone" placeholder="070333442" class="phone"required>
+        <input type="tel" name="phone" id="phone" placeholder="070333442" class="phone" required>
 
-        <select name="customer-status" id="customer-status"class="customer-status" required>
+        <select name="customer-status" id="customer-status" class="customer-status" required>
             <option value="" disabled selected>Reason for contact</option>
             <option value="booking">Booking</option>
             <option value="cancel">Cancel booking</option>
@@ -74,11 +74,11 @@
 
         <div class="button-cont" id="button">
 
-            <button type="submit"form="customer-form" class="button" id ="send">Send</button>
+            <button type="submit" form="customer-f" class="button" id ="send">Send</button>
         </div>
         <br>
         <div class="button-cont" id="reset-button">
-            <input type="reset" class="button2" id ="return" value="Reset"></input>
+            <input type="reset" class="button2" id ="return" value="Reset">
         </div>
     </form>
 

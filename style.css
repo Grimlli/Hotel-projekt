@@ -276,16 +276,16 @@ img{
 }
 
 .arrow-down1.active{
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 .arrow-down2.active{
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 .arrow-down3.active{
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 .arrow-down4.active{
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 
 
